@@ -1,235 +1,160 @@
 [
     {
-        "question": "Choose all of the following that can be included in Jupyter notebooks?",
+        "question": "Das alternativas abaixo, sobre Entropia (de Shannon), podemos afirmar que:",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Text and graphics output from Python",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Typeset mathematics",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Python executable code",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Formatted text",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Live snakes via Python",
+                "answer": "Representa uma medida de 'Certeza'.",
                 "correct": false,
-                "feedback": "I hope not."
+                "feedback": "Errado. É justamente o oposto."
+            },
+            {
+                "answer": "Representa uma medida de 'Aleatoriedade'.",
+                "correct": true,
+                "feedback": "Correto."
+            },
+            {
+                "answer": "Tem sua medida variando de 0 a 1.",
+                "correct": false,
+                "feedback": "Boa escolha, mas a entropia pode assumir valores maiores que 1. Realçando um alto nível de desordem."
+            },
+            {
+                "answer": "Tem sua medida variando de -1 a 1.",
+                "correct": false,
+                "feedback": "Errado."
+            },
+            {
+                "answer": "Está relacionada com a Teoria da Relatividade de Einstein.",
+                "correct": false,
+                "feedback": "Errado."
             }
         ]
     },
     {
-        "question": "Testing parameter to change number of colums for answers: Choose all of the following that can be included in Jupyter notebooks?",
-        "type": "many_choice",
-        "answer_cols": 4,
-        "answers": [
-            {
-                "answer": "Text and graphics output from Python",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Typeset mathematics",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Python executable code",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Formatted text",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Live snakes via Python",
-                "correct": false,
-                "feedback": "I hope not."
-            }
-        ]
-    },
-    {
-        "question": "Which of these are used to create formatted text in Jupyter notebooks?",
+        "question": "A entropia varia, principalmente...",
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "Wiki markup",
+                "answer": "Ao longo do espaço.",
                 "correct": false,
-                "feedback": "False."
+                "feedback": "Errado."
             },
             {
-                "answer": "SVG",
-                "correct": false,
-                "feedback": "False."
-            },
-            {
-                "answer": "Markdown",
+                "answer": "Ao longo do tempo.",
                 "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Rich Text",
-                "correct": false,
-                "feedback": "False."
+                "feedback": "Correto."
             }
         ]
     },
-    {
-        "question": "Enter the value of $\\pi$ to 2 decimal places.",
-        "type": "numeric",
+	{
+        "question": "Dos dados abaixo, qual apresenta menor Entropia?",
+        "type": "many_choice",
         "answers": [
             {
-                "type": "value",
-                "value": 3.14,
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "type": "range",
-                "range": [
-                    3.142857,
-                    3.142858
-                ],
-                "correct": true,
-                "feedback": "True to 2 decimal places, but you know $\\pi$ is not really 22/7, right?"
-            },
-            {
-                "type": "range",
-                "range": [
-                    -100000000,
-                    0
-                ],
+                "answer": "0101101101",
                 "correct": false,
-                "feedback": "$\\pi$ is the AREA of a circle of radius 1. Try again."
+                "feedback": "Errado."
             },
             {
-                "type": "default",
-                "feedback": "$\\pi$ is the area of a circle of radius 1. Try again."
+                "answer": "1000000001",
+                "correct": false,
+                "feedback": "Errado. Boa tentativa, mas não é a resposta certa."
+            },
+            {
+                "answer": "1110101011",
+                "correct": false,
+                "feedback": "Errado."
+            },
+            {
+                "answer": "0000100000",
+                "correct": true,
+                "feedback": "Correto. Essa é a opção onde há menor aleatoriedade, logo a Entropia é menor."
+            },
+            {
+                "answer": "1111111100",
+                "correct": false,
+                "feedback": "Errado."
             }
         ]
     },
     {
-        "question": "Enter the value of $\\pi$ to 2 decimal places.",
+        "question": "Qual a Entropia ao se lançar uma moeda 'viciada' que tem 75% de chances de cair cara?" ,
         "type": "numeric",
         "precision": 2,
         "answers": [
             {
                 "type": "value",
-                "value": 3.14,
+                "value": 0.8,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correto, você arredondou o resultado?"
             },
             {
                 "type": "range",
-                "range": [
-                    3.142857,
-                    3.142858
-                ],
+                "range": [0.810, 0.812], 
                 "correct": true,
-                "feedback": "True to 2 decimal places, but you know $\\pi$ is not really 22/7, right?"
+                "feedback": "Correto. E = -P(x) * log2(P(x)) = -(0,75*log2(0,75)) - (0,25*log2(0,25)) = 0,811"
             },
             {
                 "type": "range",
-                "range": [
-                    -100000000,
-                    0
-                ],
+                "range": [ -100000000, -1], 
                 "correct": false,
-                "feedback": "$\\pi$ is the AREA of a circle of radius 1. Try again."
+                "feedback": "Errado. Esse não é um valor válido para Entropia."
             },
             {
                 "type": "default",
-                "feedback": "$\\pi$ is the area of a circle of radius 1. Try again."
+                "feedback": "Dicas: A cada lançamento da moeda temos mais convicção que vai dar cara, uma vez que a moeda é viciada. E = -P(x) * log2(P(x)) . Use '.' em vez de ',' para o resultado."
             }
         ]
     },
     {
-        "question": "Determine the output of the following Python code:",
-        "code": "a=\"1\"\nb=\"2\"\nprint(a+b)",
+        "question": " A formação da palavra ARARA tem a mesma Entropia que a palavra.",
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "1",
+                "code": "OSSO",
                 "correct": false,
-                "feedback": "No. When strings are operated on by +, they are concatenated."
+				"feedback": "Errado."
             },
             {
-                "answer": "2",
+                "code": "ANILINA",
                 "correct": false,
-                "feedback": "No. When strings are operated on by +, they are concatenated."
+				"feedback": "Errado."
+            },
+			{
+                "code": "ARARAQUARA",
+                "correct": false,
+				"feedback": "Errado."
             },
             {
-                "answer": "3",
-                "correct": false,
-                "feedback": "No. When strings are operated on by +, they are concatenated."
-            },
-            {
-                "answer": "12",
+                "code": "MAMAM",
                 "correct": true,
-                "feedback": "Yes. The + operator will concatenate the strings \"1\" and \"2\"."
-            },
-            {
-                "answer": "error",
-                "correct": false,
-                "feedback": "No. The + operator for strings performs string concatenation."
+				"feedback": "Correto. A ocorrência das letras MAMAM é mesma da palavra ARARA, logo, possuem mesma Entropia."
             }
         ]
     },
     {
-        "question": "The variable mylist is a Python list. Choose which code snippet will append the item 3 to mylist.",
+        "question": "O que significa o resultado de Entropia maior que 1?",
         "type": "multiple_choice",
         "answers": [
             {
-                "code": "mylist+=3",
-                "correct": false
-            },
-            {
-                "code": "mylist+=[3]",
-                "correct": true
-            },
-            {
-                "code": "mylist+={3}",
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "Which of these is the ratio of a circle's circumference to its diameter?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "$\\pi$",
+                "answer": "Alta aleatoriedade.",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correto. Entropia maior que 1 ainda siginfica um sistema com alto nível de aleatoriedade."
             },
             {
-                "answer": "$\\frac{22}{7}$",
+                "answer": "Um erro.",
                 "correct": false,
-                "feedback": "$\\frac{22}{7}$ is only an approximation to the true value."
+				"feedback": "Errado."
             },
             {
-                "answer": "3",
+                "answer": "Alta previsibilidade.",
                 "correct": false,
-                "feedback": "This is a crude approximation to the true value."
-            },
+				"feedback":	"Errado."			
+			},
             {
-                "answer": "$\\tau$",
+                "answer": "Baixa aleatoriedade.",
                 "correct": false,
-                "feedback": "True for the ratio of the circle's circumference to its radius, not diameter."
+				"feedback": "Errado."
             }
         ]
     }
