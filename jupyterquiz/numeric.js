@@ -207,7 +207,7 @@ function make_numeric(qa, outerqDiv, qDiv, aDiv, id) {
 
     var lab = document.createElement("label");
     lab.className = "InpLabel";
-    lab.textContent = "Digite a resposta:";
+    lab.textContent = "Digite o valor:";
     aDiv.append(lab);
 
     var inp = document.createElement("input");
