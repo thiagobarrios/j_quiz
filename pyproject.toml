@@ -15,4 +15,4 @@ dynamic = ["version"]
 name = "j_quiz"
 
 [project.urls]
-home-page = "https://github.com/jmshea/jupyterquiz"
+home-page = "https://github.com/thiagobarrios/j_quiz"
