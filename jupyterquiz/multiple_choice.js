@@ -65,7 +65,7 @@ function check_mc() {
             if ("feedback" in label.dataset) {
                 fb.textContent = jaxify(label.dataset.feedback);
             } else {
-                fb.textContent = "Correct!";
+                fb.textContent = "Correto!";
             }
             label.classList.add("correctButton");
 
@@ -91,7 +91,7 @@ function check_mc() {
             if ("feedback" in label.dataset) {
                 feedback = jaxify(label.dataset.feedback);
             } else {
-                feedback = "Correct!";
+                feedback = "Correto!";
             }
             if (label.dataset.answered <= 0) {
                 if (fb.dataset.answeredcorrect < 0) {
