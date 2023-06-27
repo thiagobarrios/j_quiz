@@ -152,7 +152,7 @@ function show_questions(json, mydiv) {
         iDiv.setAttribute('data-responses', '[]');
 
         // Dummy Text
-        iDiv.innerHTML="<b>Abaixo estão as respostas que você seleciounou.</b>"
+        iDiv.innerHTML="<b>Neste espaço aparecerão as respostas que você marcou.</b>"
         //iDiv.className = 'Quiz';
         mydiv.appendChild(iDiv);
     }
