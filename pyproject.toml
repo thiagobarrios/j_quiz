@@ -3,7 +3,7 @@ requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "j_quiz"
+name = "JupyterQuiz"
 authors = [
     {name = "John M. Shea", email = "jshea@ieee.org"}]
 classifiers = [ "License :: OSI Approved :: MIT License",]
@@ -12,7 +12,7 @@ readme  = "README.md"
 dynamic = ["version"]
 
 [tool.flit.module]
-name = "j_quiz"
+name = "jupyterquiz"
 
 [project.urls]
 home-page = "https://github.com/thiagobarrios/j_quiz"
