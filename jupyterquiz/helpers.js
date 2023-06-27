@@ -23,7 +23,7 @@ function getRandomSubarray(arr, size) {
 
 function printResponses(responsesContainer) {
     var responses=JSON.parse(responsesContainer.dataset.responses);
-    var stringResponses='<B>IMPORTANT!</B>To preserve this answer sequence for submission, when you have finalized your answers: <ol> <li> Copy the text in this cell below "Answer String"</li> <li> Double click on the cell directly below the Answer String, labeled "Replace Me"</li> <li> Select the whole "Replace Me" text</li> <li> Paste in your answer string and press shift-Enter.</li><li>Save the notebook using the save icon or File->Save Notebook menu item</li></ul><br><br><br><b>Answer String:</b><br> ';
+    var stringResponses='<B>IMPORTANTE!</B>Copie a sequência de respostas preservando a ordem.';
     console.log(responses);
     responses.forEach((response, index) => {
         if (response) {
