@@ -23,7 +23,7 @@ function getRandomSubarray(arr, size) {
 
 function printResponses(responsesContainer) {
     var responses=JSON.parse(responsesContainer.dataset.responses);
-    var stringResponses='<B>IMPORTANTE!</B>Copie a sequência de respostas preservando a ordem.';
+    var stringResponses='<B>IMPORTANTE! </B>Copie a sequência de respostas preservando a ordem.<BR><BR>';
     console.log(responses);
     responses.forEach((response, index) => {
         if (response) {
