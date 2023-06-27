@@ -9,7 +9,7 @@ import sys
 
 
 
-def display_quiz(ref, num=1_000_000, shuffle_questions=True, shuffle_answers=True, preserve_responses=False,
+def display_quiz(ref, num=1_000_000, shuffle_questions=False, shuffle_answers=True, preserve_responses=False,
                  border_radius=10, question_alignment="left", max_width=600,
                  colors = None ):
     '''
