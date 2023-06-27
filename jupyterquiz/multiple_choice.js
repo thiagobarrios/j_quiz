@@ -76,7 +76,7 @@ function check_mc() {
             if ("feedback" in label.dataset) {
                 fb.textContent = jaxify(label.dataset.feedback);
             } else {
-                fb.textContent = "Incorrect -- try again.";
+                fb.textContent = "Incorreto -- tente novamente.";
             }
             //console.log("Error action");
             label.classList.add("incorrectButton");
@@ -117,7 +117,7 @@ function check_mc() {
             if ("feedback" in label.dataset) {
                 feedback = jaxify(label.dataset.feedback);
             } else {
-                feedback = "Incorrect -- try again.";
+                feedback = "Incorreto -- tente novamente.";
             }
             if (fb.dataset.answeredcorrect > 0) {
                 fb.dataset.answeredcorrect = -1;
